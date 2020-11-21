@@ -1,0 +1,699 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: CircuitoVojabes.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CircuitoVojabes.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CircuitoVojabes"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : CircuitoVojabes
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd" in Library work.
+Architecture behavioral of Entity debounce is up to date.
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd" in Library work.
+Architecture a of Entity clk_div is up to date.
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" in Library work.
+Architecture fsm of Entity moore is up to date.
+Compiling vhdl file "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" in Library work.
+Architecture behavioral of Entity ftc_mxilinx_circuitovojabes is up to date.
+Architecture behavioral of Entity circuitovojabes is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CircuitoVojabes> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_div> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <FTC_MXILINX_CircuitoVojabes> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+Analyzing hierarchy for entity <MOORE> in library <work> (architecture <fsm>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CircuitoVojabes> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" line 166: Unconnected output port 'clock_1MHz' of component 'clk_div'.
+WARNING:Xst:753 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" line 166: Unconnected output port 'clock_100KHz' of component 'clk_div'.
+WARNING:Xst:753 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" line 166: Unconnected output port 'clock_10KHz' of component 'clk_div'.
+WARNING:Xst:753 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" line 166: Unconnected output port 'clock_1KHz' of component 'clk_div'.
+WARNING:Xst:753 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" line 166: Unconnected output port 'clock_10Hz' of component 'clk_div'.
+WARNING:Xst:753 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" line 166: Unconnected output port 'clock_1Hz' of component 'clk_div'.
+    Set user-defined property "HU_SET =  XLXI_4_0" for instance <XLXI_4> in unit <CircuitoVojabes>.
+    Set user-defined property "HU_SET =  XLXI_5_1" for instance <XLXI_5> in unit <CircuitoVojabes>.
+Entity <CircuitoVojabes> analyzed. Unit <CircuitoVojabes> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <behavioral>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <clk_div> in library <work> (Architecture <a>).
+Entity <clk_div> analyzed. Unit <clk_div> generated.
+
+Analyzing generic Entity <FTC_MXILINX_CircuitoVojabes> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTC_MXILINX_CircuitoVojabes>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTC_MXILINX_CircuitoVojabes>.
+Entity <FTC_MXILINX_CircuitoVojabes> analyzed. Unit <FTC_MXILINX_CircuitoVojabes> generated.
+
+Analyzing Entity <MOORE> in library <work> (Architecture <fsm>).
+WARNING:Xst:819 - "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" line 38: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <CURRENT_STATE>
+Entity <MOORE> analyzed. Unit <MOORE> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd".
+    Found 21-bit up counter for signal <clk_div>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <clk_div>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd".
+    Found 1-bit register for signal <clock_1MHz>.
+    Found 1-bit register for signal <clock_100KHz>.
+    Found 1-bit register for signal <clock_100Hz>.
+    Found 1-bit register for signal <clock_10Hz>.
+    Found 1-bit register for signal <clock_1Hz>.
+    Found 1-bit register for signal <clock_10KHz>.
+    Found 1-bit register for signal <clock_1KHz>.
+    Found 1-bit register for signal <clock_100hz_int>.
+    Found 1-bit register for signal <clock_100Khz_int>.
+    Found 1-bit register for signal <clock_10Hz_int>.
+    Found 1-bit register for signal <clock_10Khz_int>.
+    Found 1-bit register for signal <clock_1Hz_int>.
+    Found 1-bit register for signal <clock_1Khz_int>.
+    Found 1-bit register for signal <clock_1Mhz_int>.
+    Found 7-bit comparator less for signal <clock_1Mhz_int$cmp_lt0000> created at line 38.
+    Found 3-bit up counter for signal <count_100hz>.
+    Found 3-bit up counter for signal <count_100Khz>.
+    Found 3-bit up counter for signal <count_10hz>.
+    Found 3-bit up counter for signal <count_10Khz>.
+    Found 3-bit up counter for signal <count_1hz>.
+    Found 3-bit up counter for signal <count_1Khz>.
+    Found 6-bit up counter for signal <count_1Mhz>.
+    Found 7-bit comparator less for signal <count_1Mhz$cmp_lt0000> created at line 33.
+    Summary:
+	inferred   7 Counter(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <clk_div> synthesized.
+
+
+Synthesizing Unit <MOORE>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd".
+WARNING:Xst:1780 - Signal <STATE> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <Ca>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <P>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <NEXT_STATE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 3-bit register for signal <CURRENT_STATE>.
+    Found 3-bit 5-to-1 multiplexer for signal <NEXT_STATE$mux0004>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <MOORE> synthesized.
+
+
+Synthesizing Unit <FTC_MXILINX_CircuitoVojabes>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf".
+Unit <FTC_MXILINX_CircuitoVojabes> synthesized.
+
+
+Synthesizing Unit <CircuitoVojabes>.
+    Related source file is "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf".
+Unit <CircuitoVojabes> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 9
+ 21-bit up counter                                     : 2
+ 3-bit up counter                                      : 6
+ 6-bit up counter                                      : 1
+# Registers                                            : 21
+ 1-bit register                                        : 20
+ 3-bit register                                        : 1
+# Latches                                              : 3
+ 1-bit latch                                           : 2
+ 3-bit latch                                           : 1
+# Comparators                                          : 2
+ 7-bit comparator less                                 : 2
+# Multiplexers                                         : 1
+ 3-bit 5-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 9
+ 21-bit up counter                                     : 2
+ 3-bit up counter                                      : 6
+ 6-bit up counter                                      : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Latches                                              : 3
+ 1-bit latch                                           : 2
+ 3-bit latch                                           : 1
+# Comparators                                          : 2
+ 7-bit comparator less                                 : 2
+# Multiplexers                                         : 1
+ 3-bit 5-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CircuitoVojabes> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <clk_div> ...
+
+Optimizing unit <FTC_MXILINX_CircuitoVojabes> ...
+
+Optimizing unit <MOORE> ...
+WARNING:Xst:2677 - Node <XLXI_3/count_1hz_2> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/count_1hz_1> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/count_1hz_0> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/count_10hz_2> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/count_10hz_1> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/count_10hz_0> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_1Hz> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_1Hz_int> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_10Hz> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_10Hz_int> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_1KHz> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_10KHz> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_100KHz> of sequential type is unconnected in block <CircuitoVojabes>.
+WARNING:Xst:2677 - Node <XLXI_3/clock_1MHz> of sequential type is unconnected in block <CircuitoVojabes>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CircuitoVojabes, actual ratio is 1.
+FlipFlop XLXI_11/CURRENT_STATE_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop XLXI_11/CURRENT_STATE_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop XLXI_11/CURRENT_STATE_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CircuitoVojabes.ngr
+Top Level Output File Name         : CircuitoVojabes
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 195
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 40
+#      LUT2                        : 5
+#      LUT3                        : 15
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 20
+#      MUXCY                       : 52
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XOR2                        : 2
+#      XORCY                       : 42
+# FlipFlops/Latches                : 85
+#      FD                          : 43
+#      FDC                         : 8
+#      FDE                         : 10
+#      FDR                         : 19
+#      LD                          : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 2
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       54  out of   4656     1%  
+ Number of Slice Flip Flops:             80  out of   9312     0%  
+ Number of 4 input LUTs:                 96  out of   9312     1%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
+    IOB Flip Flops:                       5
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------+------------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)        | Load  |
+---------------------------------------+------------------------------+-------+
+CLK                                    | BUFGP                        | 56    |
+XLXI_3/clock_10Khz_int                 | NONE(XLXI_3/count_1Khz_2)    | 4     |
+XLXI_3/clock_1Khz_int                  | NONE(XLXI_3/count_100hz_2)   | 4     |
+XLXI_3/clock_1Mhz_int                  | NONE(XLXI_3/count_100Khz_2)  | 4     |
+XLXI_3/clock_100Khz_int                | NONE(XLXI_3/count_10Khz_2)   | 4     |
+XLXI_4/Q                               | NONE(XLXI_5/I_36_35)         | 1     |
+XLXI_3/clock_100Hz                     | NONE(XLXI_4/I_36_35)         | 1     |
+XLXI_11/Ca_or0000(XLXI_11/Ca_or00001:O)| NONE(*)(XLXI_11/NEXT_STATE_2)| 5     |
+XLXI_5/Q                               | NONE(XLXI_11/CURRENT_STATE_2)| 6     |
+---------------------------------------+------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------------+-------+
+Control Signal                     | Buffer(FF name)              | Load  |
+-----------------------------------+------------------------------+-------+
+XLXN_13(XLXI_12:G)                 | NONE(XLXI_11/CURRENT_STATE_0)| 8     |
+-----------------------------------+------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.555ns (Maximum Frequency: 219.539MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.555ns (frequency: 219.539MHz)
+  Total number of paths / destination ports: 655 / 65
+-------------------------------------------------------------------------
+Delay:               4.555ns (Levels of Logic = 21)
+  Source:            XLXI_2/clk_div_1 (FF)
+  Destination:       XLXI_2/clk_div_20 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_2/clk_div_1 to XLXI_2/clk_div_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  XLXI_2/clk_div_1 (XLXI_2/clk_div_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_2/Mcount_clk_div_cy<1>_rt (XLXI_2/Mcount_clk_div_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_2/Mcount_clk_div_cy<1> (XLXI_2/Mcount_clk_div_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<2> (XLXI_2/Mcount_clk_div_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<3> (XLXI_2/Mcount_clk_div_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<4> (XLXI_2/Mcount_clk_div_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<5> (XLXI_2/Mcount_clk_div_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<6> (XLXI_2/Mcount_clk_div_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<7> (XLXI_2/Mcount_clk_div_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<8> (XLXI_2/Mcount_clk_div_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<9> (XLXI_2/Mcount_clk_div_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<10> (XLXI_2/Mcount_clk_div_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<11> (XLXI_2/Mcount_clk_div_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<12> (XLXI_2/Mcount_clk_div_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<13> (XLXI_2/Mcount_clk_div_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<14> (XLXI_2/Mcount_clk_div_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<15> (XLXI_2/Mcount_clk_div_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<16> (XLXI_2/Mcount_clk_div_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<17> (XLXI_2/Mcount_clk_div_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/Mcount_clk_div_cy<18> (XLXI_2/Mcount_clk_div_cy<18>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_2/Mcount_clk_div_cy<19> (XLXI_2/Mcount_clk_div_cy<19>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_2/Mcount_clk_div_xor<20> (XLXI_2/Result<20>)
+     FD:D                      0.308          XLXI_2/clk_div_20
+    ----------------------------------------
+    Total                      4.555ns (3.933ns logic, 0.622ns route)
+                                       (86.3% logic, 13.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/clock_10Khz_int'
+  Clock period: 3.555ns (frequency: 281.294MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               3.555ns (Levels of Logic = 1)
+  Source:            XLXI_3/count_1Khz_0 (FF)
+  Destination:       XLXI_3/count_1Khz_2 (FF)
+  Source Clock:      XLXI_3/clock_10Khz_int rising
+  Destination Clock: XLXI_3/clock_10Khz_int rising
+
+  Data Path: XLXI_3/count_1Khz_0 to XLXI_3/count_1Khz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  XLXI_3/count_1Khz_0 (XLXI_3/count_1Khz_0)
+     LUT3:I0->O            4   0.704   0.587  XLXI_3/clock_1Khz_int_and00001 (XLXI_3/clock_1Khz_int_and0000)
+     FDR:R                     0.911          XLXI_3/count_1Khz_0
+    ----------------------------------------
+    Total                      3.555ns (2.206ns logic, 1.349ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/clock_1Khz_int'
+  Clock period: 3.555ns (frequency: 281.294MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               3.555ns (Levels of Logic = 1)
+  Source:            XLXI_3/count_100hz_0 (FF)
+  Destination:       XLXI_3/count_100hz_2 (FF)
+  Source Clock:      XLXI_3/clock_1Khz_int rising
+  Destination Clock: XLXI_3/clock_1Khz_int rising
+
+  Data Path: XLXI_3/count_100hz_0 to XLXI_3/count_100hz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  XLXI_3/count_100hz_0 (XLXI_3/count_100hz_0)
+     LUT3:I0->O            4   0.704   0.587  XLXI_3/clock_100hz_int_and00001 (XLXI_3/clock_100hz_int_and0000)
+     FDR:R                     0.911          XLXI_3/count_100hz_0
+    ----------------------------------------
+    Total                      3.555ns (2.206ns logic, 1.349ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/clock_1Mhz_int'
+  Clock period: 3.555ns (frequency: 281.294MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               3.555ns (Levels of Logic = 1)
+  Source:            XLXI_3/count_100Khz_0 (FF)
+  Destination:       XLXI_3/count_100Khz_2 (FF)
+  Source Clock:      XLXI_3/clock_1Mhz_int rising
+  Destination Clock: XLXI_3/clock_1Mhz_int rising
+
+  Data Path: XLXI_3/count_100Khz_0 to XLXI_3/count_100Khz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  XLXI_3/count_100Khz_0 (XLXI_3/count_100Khz_0)
+     LUT3:I0->O            4   0.704   0.587  XLXI_3/clock_100Khz_int_and00001 (XLXI_3/clock_100Khz_int_and0000)
+     FDR:R                     0.911          XLXI_3/count_100Khz_0
+    ----------------------------------------
+    Total                      3.555ns (2.206ns logic, 1.349ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/clock_100Khz_int'
+  Clock period: 3.555ns (frequency: 281.294MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               3.555ns (Levels of Logic = 1)
+  Source:            XLXI_3/count_10Khz_0 (FF)
+  Destination:       XLXI_3/count_10Khz_2 (FF)
+  Source Clock:      XLXI_3/clock_100Khz_int rising
+  Destination Clock: XLXI_3/clock_100Khz_int rising
+
+  Data Path: XLXI_3/count_10Khz_0 to XLXI_3/count_10Khz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  XLXI_3/count_10Khz_0 (XLXI_3/count_10Khz_0)
+     LUT3:I0->O            4   0.704   0.587  XLXI_3/clock_10Khz_int_and00001 (XLXI_3/clock_10Khz_int_and0000)
+     FDR:R                     0.911          XLXI_3/count_10Khz_0
+    ----------------------------------------
+    Total                      3.555ns (2.206ns logic, 1.349ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_4/Q'
+  Clock period: 2.731ns (frequency: 366.166MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.731ns (Levels of Logic = 1)
+  Source:            XLXI_5/I_36_35 (FF)
+  Destination:       XLXI_5/I_36_35 (FF)
+  Source Clock:      XLXI_4/Q rising
+  Destination Clock: XLXI_4/Q rising
+
+  Data Path: XLXI_5/I_36_35 to XLXI_5/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.708  I_36_35 (Q)
+     XOR2:I1->O            1   0.704   0.420  I_36_32 (TQ)
+     FDC:D                     0.308          I_36_35
+    ----------------------------------------
+    Total                      2.731ns (1.603ns logic, 1.128ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/clock_100Hz'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            XLXI_4/I_36_35 (FF)
+  Destination:       XLXI_4/I_36_35 (FF)
+  Source Clock:      XLXI_3/clock_100Hz rising
+  Destination Clock: XLXI_3/clock_100Hz rising
+
+  Data Path: XLXI_4/I_36_35 to XLXI_4/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  I_36_35 (Q)
+     XOR2:I1->O            1   0.704   0.420  I_36_32 (TQ)
+     FDC:D                     0.308          I_36_35
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            D (PAD)
+  Destination:       XLXI_2/Q1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: D to XLXI_2/Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  D_IBUF (D_IBUF)
+     FDE:D                     0.308          XLXI_2/Q1
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_11/Ca_or0000'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            XLXI_11/Ca (LATCH)
+  Destination:       CA (PAD)
+  Source Clock:      XLXI_11/Ca_or0000 falling
+
+  Data Path: XLXI_11/Ca to CA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  XLXI_11/Ca (XLXI_11/Ca)
+     OBUF:I->O                 3.272          CA_OBUF (CA)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_5/Q'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            XLXI_11/CURRENT_STATE_2_1 (FF)
+  Destination:       ESTADOS<2> (PAD)
+  Source Clock:      XLXI_5/Q rising
+
+  Data Path: XLXI_11/CURRENT_STATE_2_1 to ESTADOS<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  XLXI_11/CURRENT_STATE_2_1 (XLXI_11/CURRENT_STATE_2_1)
+     OBUF:I->O                 3.272          ESTADOS_2_OBUF (ESTADOS<2>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.49 secs
+ 
+--> 
+
+Total memory usage is 4522944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,40 @@
+V3 23
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" 2020/11/19.17:49:34 P.20131013
+EN work/FTC_MXILINX_CircuitoVojabes 1605827470 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTC_MXILINX_CircuitoVojabes/BEHAVIORAL 1605827471 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" \
+      EN work/FTC_MXILINX_CircuitoVojabes 1605827470 CP XOR2 CP FDC
+EN work/CircuitoVojabes 1605827472 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CircuitoVojabes/BEHAVIORAL 1605827473 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" \
+      EN work/CircuitoVojabes 1605827472 CP debounce CP clk_div \
+      CP FTC_MXILINX_CircuitoVojabes CP GND CP VCC CP MOORE
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd" 2020/11/19.14:58:26 P.20131013
+EN work/clk_div 1605827466 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clk_div/a 1605827467 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd" \
+      EN work/clk_div 1605827466
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd" 2020/10/29.14:24:11 P.20131013
+EN work/debounce 1605827464 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debounce/Behavioral 1605827465 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd" \
+      EN work/debounce 1605827464
+FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" 2020/11/19.16:28:29 P.20131013
+EN work/MOORE 1605827468 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MOORE/FSM 1605827469 \
+      FL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" \
+      EN work/MOORE 1605827468

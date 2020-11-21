@@ -1,0 +1,4 @@
+vhdl work "Maquina_Estado.vhd"
+vhdl work "debounce.vhd"
+vhdl work "clk_div.vhd"
+vhdl work "CircuitoVojabes.vhf"

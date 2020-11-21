@@ -1,0 +1,4 @@
+vhdl work "C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\LabSemana15\Maquina_Estado.vhd"
+vhdl work "C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\LabSemana15\debounce.vhd"
+vhdl work "C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\LabSemana15\clk_div.vhd"
+vhdl work "C:\Users\prestamo\Desktop\Nueva carpeta\ControlServoMotor\LabSemana15\CircuitoVojabes.vhf"

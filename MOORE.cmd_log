@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Maquina_Estado.vhd -prj LabSemana15 -o MOORE.spl -module MOORE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MOORE.spl {C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/MOORE.sym} 

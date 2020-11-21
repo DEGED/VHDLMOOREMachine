@@ -1,0 +1,10 @@
+EN ftc_mxilinx_circuitovojabes NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" sub00/vhpl06 1605827470
+AR moore fsm "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" sub00/vhpl05 1605827469
+AR circuitovojabes behavioral "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" sub00/vhpl09 1605827473
+EN debounce NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd" sub00/vhpl00 1605827464
+AR debounce behavioral "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/debounce.vhd" sub00/vhpl01 1605827465
+AR clk_div a "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd" sub00/vhpl03 1605827467
+EN moore NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/Maquina_Estado.vhd" sub00/vhpl04 1605827468
+AR ftc_mxilinx_circuitovojabes behavioral "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" sub00/vhpl07 1605827471
+EN circuitovojabes NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/CircuitoVojabes.vhf" sub00/vhpl08 1605827472
+EN clk_div NULL "C:/Users/prestamo/Desktop/Nueva carpeta/ControlServoMotor/LabSemana15/clk_div.vhd" sub00/vhpl02 1605827466
